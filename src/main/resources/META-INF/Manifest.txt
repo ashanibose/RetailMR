@@ -1,0 +1,1 @@
+Main-Class: bds.assignment2.mr.WordCount
