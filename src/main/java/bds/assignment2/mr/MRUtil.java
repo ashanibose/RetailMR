@@ -3,7 +3,7 @@ package bds.assignment2.mr;
 import java.text.ParseException;
 import java.util.Date;
 
-public class Util {
+public class MRUtil {
 
 	public static boolean is2010(String dateStr) {
 
@@ -15,8 +15,8 @@ public class Util {
 			if (year == 2010) {
 				return true;
 			}
-		} catch (ParseException | NumberFormatException e) {
-			// System.err.println(e);
+		} catch (Exception e) { // catch (ParseException | NumberFormatException e) {
+			System.err.println("Error while parsing date: " + dateStr);
 		}
 
 		return false;

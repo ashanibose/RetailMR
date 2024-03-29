@@ -12,7 +12,6 @@ public class EntryMR {
 		int numberOfRuns = Integer.parseInt(args[0]);
 		String inputRootDir = args[1];
 		String outputRootDir = args[2];
-		
 
 		// Query 1 - Platform/Framework 1 - MapReduce
 		System.out.println("Executing Query 1 - Platform/Framework 1 - MapReduce");
@@ -31,8 +30,8 @@ public class EntryMR {
 		Thread.sleep(1000);
 
 		System.out.println("\n-------------------------------------------------------------\n");
-		System.out.println("Query 1 - Platform/Framework 1 - MapReduce = " + avgExecutionTime1 + " ms");
-		System.out.println("Query 2 - Platform/Framework 1 - MapReduce = " + avgExecutionTime3 + " ms");
+		System.out.println("Query 1 - Platform/Framework 1 - MapReduce = " + (avgExecutionTime1 / 1000) + " seconds");
+		System.out.println("Query 2 - Platform/Framework 1 - MapReduce = " + (avgExecutionTime3 / 1000) + " seconds");
 
 	}
 }

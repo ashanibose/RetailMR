@@ -59,7 +59,7 @@ public class Q1MRTotalSalesRevenue extends MapReduceQuery {
 				String priceStr = fields[6];
 
 				try {
-					if (Util.is2010(dateStr)) {
+					if (MRUtil.is2010(dateStr)) {
 						double price = Double.parseDouble(priceStr);
 						outputKey.set("TotalRevenue");
 						outputValue.set(price);

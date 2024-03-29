@@ -59,7 +59,7 @@ public class Q2MRTotalSalesVolume extends MapReduceQuery {
 				String stockCode = fields[2];
 
 				try {
-					if (Util.is2010(dateStr)) {
+					if (MRUtil.is2010(dateStr)) {
 						long quantity = Long.parseLong(quantityStr);
 						outputKey.set(stockCode);
 						outputValue.set(quantity);
