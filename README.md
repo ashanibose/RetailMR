@@ -1,4 +1,4 @@
-# RetailMR - MapReduce Retail Data Analysis
+# SalesAnalytics-MapReduce - Retail Sales Data Analysis
 
 A Java-based MapReduce project for analyzing retail sales data, specifically designed to calculate total sales revenue and sales volume for the year 2010.
 
@@ -12,7 +12,7 @@ This project implements Apache Hadoop MapReduce jobs to process retail transacti
 ## Project Structure
 
 ```
-RetailMR/
+SalesAnalytics-MapReduce/
 ├── pom.xml                          # Maven configuration
 ├── README.md                        # Project documentation
 └── src/
@@ -101,7 +101,7 @@ mvn clean compile
 ### Command Line Usage
 
 ```bash
-java -jar RetailMR.jar <number_of_runs> <input_dir_root> <output_dir_root>
+java -jar SalesAnalytics-MapReduce.jar <number_of_runs> <input_dir_root> <output_dir_root>
 ```
 
 ### Parameters
@@ -113,7 +113,7 @@ java -jar RetailMR.jar <number_of_runs> <input_dir_root> <output_dir_root>
 ### Example
 
 ```bash
-java -jar RetailMR.jar 3 /user/Hadoop/retaildata/v6 /user/Hadoop/retaildata/output
+java -jar SalesAnalytics-MapReduce.jar 3 /user/Hadoop/retaildata/v6 /user/Hadoop/retaildata/output
 ```
 
 This will:
